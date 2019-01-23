@@ -1,4 +1,4 @@
-require("dotenv").config();
+require(".dotenv").config();
 const dotevn = require('./env')
 const API_Keys = require('./keys.js');
 const twitter  = require('twitter');
@@ -6,12 +6,11 @@ const spotify  = require('node-spotify-api');
 const request  = require('request');
 const inquirer = require('inquirer');
 const colors   = require('colors');
-const fs  	   = require('fs');
+const fs = require('fs');
 const moment = require('moment')
 const axios = reqire('axios')
 
 programStart();
-
 
 function programStart() {
 	logStuffThatHappens('to start the program', 'node liri.js');
